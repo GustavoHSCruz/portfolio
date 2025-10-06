@@ -1,6 +1,7 @@
 import { ArrowDown, Github, Linkedin, Mail, User } from "lucide-react";
 import { useApp } from "../contexts/AppContext";
 import { Button } from "./ui/button";
+import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 
 export function HeroSection() {
 	const { t } = useApp();
@@ -13,12 +14,13 @@ export function HeroSection() {
 							{/* Photo placeholder - replace with actual photo */}
 							<div className="w-full h-full rounded-full bg-gradient-to-br from-blue-600 to-purple-600 p-1">
 								<div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden">
-									{/* When you have a photo, replace this div with:
-                  <ImageWithFallback 
-                    src="/path/to/your/photo.jpg" 
+									{
+                  <ImageWithFallback
+                    src={t.hero.picture}
                     alt="Gustavo Cruz"
                     className="w-full h-full object-cover rounded-full"
-                  /> */}
+                  />
+}
 									<User className="h-16 w-16 text-muted-foreground" />
 								</div>
 							</div>

@@ -18,6 +18,7 @@ export const translations = {
 		// Hero Section
 		hero: {
 			title: "Gustavo Cruz",
+			picture: "https://avatars.githubusercontent.com/u/66931989?s=400&u=175edc510964dd4809a7f10a6f47c081b0055c58&v=4",
 			role: "C# / .NET Developer - Computer Engineer",
 			tagline:
 				".NET Developer focused on clean code, performance and security.",
@@ -265,6 +266,7 @@ export const translations = {
 		// Hero Section
 		hero: {
 			title: "Gustavo Cruz",
+			picture: "https://avatars.githubusercontent.com/u/66931989?s=400&u=175edc510964dd4809a7f10a6f47c081b0055c58&v=4",
 			role: "Desenvolvedor C# / .NET  - Engenheiro da Computação",
 			tagline:
 				"Desenvolvedor .NET focado em código limpo, performance e segurança.",
