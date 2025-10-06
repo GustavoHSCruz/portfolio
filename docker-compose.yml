@@ -1,9 +1,8 @@
-version: "3.8"
 services:
   frontend:
     build: .
     ports:
-      - "3000:80"
+      - "2003:80"
     environment:
       - VITE_CONTACT_API_URL=${VITE_CONTACT_API_URL:-https://apigcruz.geg.dev.br}
     restart: unless-stopped
