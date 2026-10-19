@@ -1,0 +1,20 @@
+# Gustavo Cruz
+
+> Gustavo Cruz is a Brazilian software engineer focused on backend systems in production, with eight years in technology and four years building with C# and .NET.
+
+He currently works at DXC Technology. His experience covers software engineering, infrastructure and application security. This portfolio is available in English and Brazilian Portuguese.
+
+## Portfolio
+
+- [English portfolio](https://gcruz.geg.dev.br/): Primary version of the portfolio
+- [Portuguese portfolio](https://gcruz.geg.dev.br/pt/): Brazilian Portuguese version
+- [Experience](https://gcruz.geg.dev.br/#experiencia): Professional history and verified outcomes
+- [Projects](https://gcruz.geg.dev.br/#projetos): Selected public and independently developed work
+- [Education](https://gcruz.geg.dev.br/#formacao): Degree, MBA and postgraduate education
+- [Contact](https://gcruz.geg.dev.br/#contato): Email, calendar, LinkedIn and GitHub
+
+## Public work and profiles
+
+- [SteamProfiler](https://steamprofiler.org): Public service that turns Steam profiles into per-game catalogues with achievements, reviews, requirements and DLCs
+- [GitHub](https://github.com/GustavoHSCruz): Public code and repositories
+- [LinkedIn](https://www.linkedin.com/in/gusttavocruz/): Professional profile

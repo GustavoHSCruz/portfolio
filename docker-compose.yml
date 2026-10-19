@@ -1,8 +1,21 @@
 services:
   frontend:
     build: .
+    network_mode: bridge
     ports:
-      - "2003:80"
-    environment:
-      - VITE_CONTACT_API_URL=${VITE_CONTACT_API_URL:-https://apigcruz.geg.dev.br}
+      - "16240:80"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1/ || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    init: true
+    read_only: true
     restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /var/cache/nginx
+      - /var/run
+      - /tmp

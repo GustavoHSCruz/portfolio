@@ -1,4 +1,10 @@
+.PHONY: run stop logs
+
 run:
-	git pull
-	docker compose down
 	docker compose up --build -d
+
+stop:
+	docker compose down
+
+logs:
+	docker compose logs --follow frontend

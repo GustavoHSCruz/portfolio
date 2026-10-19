@@ -1,30 +1,39 @@
-import { AppProvider } from "./contexts/AppContext";
-import { Header } from "./components/Header";
-import { HeroSection } from "./components/HeroSection";
-import { AboutSection } from "./components/AboutSection";
-import { ExperienceSection } from "./components/ExperienceSection";
-import { EducationSection } from "./components/EducationSection";
-import { ProjectsSection } from "./components/ProjectsSection";
-import { SkillsSection } from "./components/SkillsSection";
-import { ContactSection } from "./components/ContactSection";
-import { Footer } from "./components/Footer";
+import { Contact } from "./components/Contact";
+import { Education } from "./components/Education";
+import { Experience } from "./components/Experience";
+import { Hero } from "./components/Hero";
+import { Projects } from "./components/Projects";
+import { SiteFooter } from "./components/SiteFooter";
+import { SiteHeader } from "./components/SiteHeader";
+import type { Lang } from "./data/types";
+import { SettingsProvider, useSettings } from "./lib/settings";
+import { useReveal } from "./lib/useReveal";
 
-export default function App() {
-  return (
-    <AppProvider>
-      <div className="min-h-screen bg-background text-foreground">
-        <Header />
-        <main>
-          <HeroSection />
-          <AboutSection />
-          <ExperienceSection />
-          <EducationSection />
-          <ProjectsSection />
-          <SkillsSection />
-          <ContactSection />
-        </main>
-        <Footer />
-      </div>
-    </AppProvider>
-  );
+function Page() {
+	const { s } = useSettings();
+	useReveal();
+	return (
+		<>
+			<a className="skip" href="#experiencia">
+				{s.skipToContent}
+			</a>
+			<SiteHeader />
+			<main>
+				<Hero />
+				<Experience />
+				<Projects />
+				<Education />
+				<Contact />
+			</main>
+			<SiteFooter />
+		</>
+	);
+}
+
+export default function App({ lang }: { lang: Lang }) {
+	return (
+		<SettingsProvider lang={lang}>
+			<Page />
+		</SettingsProvider>
+	);
 }

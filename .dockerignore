@@ -4,6 +4,4 @@ dist
 build
 .env
 *.log
-src/public
-public/cv
 **/README.md
