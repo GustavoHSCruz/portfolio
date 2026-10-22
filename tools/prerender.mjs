@@ -65,7 +65,7 @@ for (const lang of langs) {
 
 	const markup = render(lang);
 	html = html.replace('<div id="root"></div>', `<div id="root">${markup}</div>`);
-	html = html.replace("</head>", `${head(lang)}\n    <meta name="theme-color" content="#0f1115" />\n  </head>`);
+	html = html.replace("</head>", `${head(lang)}\n    <meta name="theme-color" content="#0b0b0c" />\n  </head>`);
 
 	// os assets são absolutos (/assets/...), então /pt/ usa os mesmos arquivos
 	const dir = lang === "en" ? OUT : resolve(OUT, "pt");

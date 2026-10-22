@@ -1,9 +1,8 @@
-export function SectionHead({ n, title, lead }: { n: string; title: string; lead?: string }) {
+/** Título de seção: pequeno e discreto. A lista abaixo é que carrega o peso. */
+export function SectionHead({ id, title }: { id: string; title: string }) {
 	return (
-		<div className="section-head reveal">
-			<span className="section-n">{n}</span>
-			<h2 className="section-title">{title}</h2>
-			{lead && <p className="section-lead">{lead}</p>}
-		</div>
+		<h2 className="sec-title" id={id}>
+			{title}
+		</h2>
 	);
 }

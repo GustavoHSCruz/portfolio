@@ -1,59 +1,68 @@
-import type { Degree, Lang, Project } from "./types";
+import type { Contribution, Degree, Lang, Project } from "./types";
 
 export const projects: Record<Lang, Project[]> = {
 	pt: [
 		{
 			id: "steamprofiler",
 			name: "SteamProfiler",
-			status: "No ar",
 			href: "https://steamprofiler.org",
-			hrefLabel: "steamprofiler.org",
-			blurb:
-				"Consulta qualquer perfil público da Steam e monta um catálogo por jogo, com conquistas, avaliações, requisitos e DLCs.",
-			points: [
-				"Catálogo da loja, jogadores online agora e série histórica mudam em ritmos completamente diferentes. Cada um tem a própria validade de cache, em vez de um tempo único para tudo.",
-				"Perfil frio carrega em 2 segundos, quente em 15 milissegundos. Pedidos para o mesmo perfil esperam por uma consulta só, então uma rajada de visitantes não vira uma rajada de chamadas na Steam.",
-			],
+			blurb: "Sua biblioteca da Steam em escala. Site, API e uma extensão que leva a análise para a loja da Steam.",
+		},
+		{
+			id: "vpngo",
+			name: "vpngo",
+			href: "https://github.com/GustavoHSCruz/VPNGo",
+			blurb: "Manda os apps que você escolher por uma saída WireGuard própria, enquanto o resto segue na sua rede.",
+		},
+		{
+			id: "vpngo-gui",
+			name: "vpngo-gui",
+			href: "https://github.com/GustavoHSCruz/VPNGo-gui",
+			blurb: "App de desktop para os perfis e rotas do vpngo, feito para andar sozinho.",
 		},
 		{
 			id: "luralead",
 			name: "LuraLead",
-			status: "Em desenvolvimento, com cliente piloto",
-			blurb:
-				"SaaS de gestão para escritórios de advocacia, construído com arquitetura limpa, CQRS e eventos de domínio.",
-			points: [
-				"Leitura e escrita seguem caminhos separados, então relatório pesado não disputa banco com o que está gravando.",
-				"Cinco verificações de segurança automáticas no pipeline, cobrindo segredo, código, dependência, imagem e aplicação em execução. Nenhuma delas pode reprovar o build: portão de segurança que trava release é portão desligado na primeira sexta à noite.",
-			],
+			note: "privado · cliente piloto",
+			blurb: "SaaS de gestão para escritórios de advocacia, em desenvolvimento com o primeiro cliente.",
 		},
 	],
 	en: [
 		{
 			id: "steamprofiler",
 			name: "SteamProfiler",
-			status: "Live",
 			href: "https://steamprofiler.org",
-			hrefLabel: "steamprofiler.org",
-			blurb:
-				"Looks up any public Steam profile and builds a per game catalogue with achievements, reviews, requirements and DLCs.",
-			points: [
-				"Store catalogue, live player counts and historical series change at completely different rates. Each one carries its own cache validity, rather than a single expiry for everything.",
-				"A cold profile loads in 2 seconds, a warm one in 15 milliseconds. Requests for the same profile wait on a single lookup, so a burst of visitors never becomes a burst of calls to Steam.",
-			],
+			blurb: "Your Steam library, drawn to scale. Web app, API and a browser extension for the Steam store.",
+		},
+		{
+			id: "vpngo",
+			name: "vpngo",
+			href: "https://github.com/GustavoHSCruz/VPNGo",
+			blurb: "Routes the apps you choose through their own WireGuard exit while everything else stays on your network.",
+		},
+		{
+			id: "vpngo-gui",
+			name: "vpngo-gui",
+			href: "https://github.com/GustavoHSCruz/VPNGo-gui",
+			blurb: "A desktop app for vpngo profiles and routes, built to stand on its own.",
 		},
 		{
 			id: "luralead",
 			name: "LuraLead",
-			status: "In development, with a pilot client",
-			blurb:
-				"Management SaaS for law firms, built on clean architecture, CQRS and domain events.",
-			points: [
-				"Reads and writes travel separate paths, so a heavy report never contends with the writes feeding it.",
-				"Five automated security checks in the pipeline, covering secrets, code, dependencies, image and the running application. None of them can fail the build: a security gate that blocks a release is a gate switched off on the first Friday night.",
-			],
+			note: "private · pilot client",
+			blurb: "Management SaaS for law firms, in development with its first client.",
 		},
 	],
 };
+
+const pulls = (repo: string) => `https://github.com/${repo}/pulls?q=is%3Apr+author%3AGustavoHSCruz`;
+
+/** Os números de PR vêm de `releases.json`, contados no build. */
+export const contributions: Contribution[] = [
+	{ repo: "rehan-remade/universal-modder", name: "universal-modder", href: pulls("rehan-remade/universal-modder") },
+	{ repo: "ran-j/PS2Recomp", name: "PS2Recomp", href: pulls("ran-j/PS2Recomp") },
+	{ repo: "guilhermeSDB/Orbe", name: "Orbe", href: pulls("guilhermeSDB/Orbe") },
+];
 
 export const education: Record<Lang, Degree[]> = {
 	pt: [
@@ -63,9 +72,10 @@ export const education: Record<Lang, Degree[]> = {
 		{ degree: "Engenharia da Computação", org: "UNOPAR", done: "2022" },
 	],
 	en: [
-		{ degree: "Postgraduate in Information Security", org: "Anhanguera", done: "2024" },
-		{ degree: "Postgraduate in Back-End Development", org: "Anhanguera", done: "2024" },
-		{ degree: "MBA in IT Management", org: "Anhanguera", done: "2023" },
+		{ degree: "Postgraduate, Information Security", org: "Anhanguera", done: "2024" },
+		{ degree: "Postgraduate, Back-End Development", org: "Anhanguera", done: "2024" },
+		{ degree: "MBA, IT Management", org: "Anhanguera", done: "2023" },
 		{ degree: "Computer Engineering", org: "UNOPAR", done: "2022" },
 	],
 };
+

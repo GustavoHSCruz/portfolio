@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font-size",
+        "value": "*",
+        "files": [
+          "tools/og.html"
+        ],
+        "createdAt": "2026-10-22T13:11:13.857Z",
+        "reason": "Claude: OG card is a 1200x630 raster scaled down by social previews, so its type is sized for that canvas, not the page ramp"
+      }
+    ]
+  }
+}

@@ -31,8 +31,7 @@ export function personJsonLd(lang: Lang) {
 	return {
 		"@context": "https://schema.org",
 		"@type": "Person",
-		name: "Gustavo Henrique de Souza e Cruz",
-		alternateName: "Gustavo Cruz",
+		name: "Gustavo Cruz",
 		url: `${SITE}${seo[lang].path}`,
 		image: `${SITE}/og.png`,
 		jobTitle: isPt ? "Engenheiro de Software Sênior" : "Senior Software Engineer",

@@ -2,7 +2,6 @@ import type { Job, Lang } from "./types";
 
 export const identity = {
 	name: "Gustavo Cruz",
-	fullName: "Gustavo Henrique de Souza e Cruz",
 	avatar: "https://avatars.githubusercontent.com/u/66931989?v=4",
 	email: "gustavo_cruz08@hotmail.com",
 	calendly: "https://calendly.com/gustavo_cruz08",
@@ -18,7 +17,9 @@ export const jobs: Record<Lang, Job[]> = {
 			role: "Engenheiro de Software Sênior",
 			org: "DXC Technology",
 			context: "Operadora logística de grande porte",
-			period: "jan/2026 · atual",
+			period: "2026 – hoje",
+			phase: "software",
+			line: "Sistemas críticos de uma operadora logística de grande porte, da regra de negócio até a produção.",
 			summary:
 				"Respondo pela manutenção e pela evolução dos sistemas críticos da operação, do entendimento da regra de negócio até a entrega em produção.",
 			points: [
@@ -27,9 +28,11 @@ export const jobs: Record<Lang, Job[]> = {
 			],
 		},
 		{
-			role: "Desenvolvedor .NET Pleno",
+			role: "Desenvolvedor .NET",
 			org: "Concent Sistemas",
-			period: "jun/2023 · ago/2025",
+			period: "2023 – 2025",
+			phase: "software",
+			line: "Reduzi a memória dos containers de 1,5 GB para 400 MB e o tempo das consultas mais lentas em 40%.",
 			summary:
 				"Responsável pela sustentação e pela evolução de sistemas corporativos em homologação e produção. Ponto focal para mudanças em banco de produção, revisão e aprovação de pull requests, e diagnóstico de performance.",
 			points: [
@@ -39,9 +42,11 @@ export const jobs: Record<Lang, Job[]> = {
 			],
 		},
 		{
-			role: "Desenvolvedor Full Stack Júnior",
+			role: "Desenvolvedor Full Stack",
 			org: "Orthodontic",
-			period: "abr/2021 · jan/2023",
+			period: "2021 – 2023",
+			phase: "software",
+			line: "Dois sistemas de gestão para uma rede de franquias, intranet incluída.",
 			summary:
 				"Sistemas de gestão para uma rede de franquias, incluindo a intranet da empresa.",
 			points: [
@@ -49,9 +54,11 @@ export const jobs: Record<Lang, Job[]> = {
 			],
 		},
 		{
-			role: "Analista de Infraestrutura e Aplicações Pleno",
+			role: "Analista de Infraestrutura",
 			org: "Tata Consultancy Services",
-			period: "mai/2019 · mar/2021",
+			period: "2019 – 2021",
+			phase: "infra",
+			line: "Operações internacionais, em inglês, atravessando uma troca de consultoria.",
 			summary:
 				"Estabilidade de ambientes e troubleshooting avançado para operações internacionais, incluindo configuração de rede e manutenção do parque de TI.",
 			points: [
@@ -60,9 +67,11 @@ export const jobs: Record<Lang, Job[]> = {
 			],
 		},
 		{
-			role: "Analista de Infraestrutura e Aplicações",
+			role: "Analista de Infraestrutura",
 			org: "Atos",
-			period: "fev/2018 · mai/2019",
+			period: "2018 – 2019",
+			phase: "infra",
+			line: "Incidentes de sistema, rede e hardware em ambientes corporativos.",
 			summary:
 				"Diagnóstico e resolução de incidentes em sistema, rede, hardware e software, em ambientes corporativos nacionais e internacionais.",
 			points: [
@@ -75,7 +84,9 @@ export const jobs: Record<Lang, Job[]> = {
 			role: "Senior Software Engineer",
 			org: "DXC Technology",
 			context: "Large logistics operator",
-			period: "Jan 2026 · present",
+			period: "2026 – now",
+			phase: "software",
+			line: "Critical systems for a large logistics operator, from the business rule to production.",
 			summary:
 				"I own the maintenance and the evolution of the operation's critical systems, from the business rule through to production.",
 			points: [
@@ -86,7 +97,9 @@ export const jobs: Record<Lang, Job[]> = {
 		{
 			role: ".NET Developer",
 			org: "Concent Sistemas",
-			period: "Jun 2023 · Aug 2025",
+			period: "2023 – 2025",
+			phase: "software",
+			line: "Cut container memory from 1.5 GB to 400 MB and the slowest queries by 40%.",
 			summary:
 				"Responsible for supporting and evolving corporate systems in staging and production. Focal point for production database changes, pull request review and approval, and performance diagnosis.",
 			points: [
@@ -96,18 +109,22 @@ export const jobs: Record<Lang, Job[]> = {
 			],
 		},
 		{
-			role: "Junior Full Stack Developer",
+			role: "Full Stack Developer",
 			org: "Orthodontic",
-			period: "Apr 2021 · Jan 2023",
+			period: "2021 – 2023",
+			phase: "software",
+			line: "Two management systems for a franchise network, intranet included.",
 			summary: "Management systems for a franchise network, including the company intranet.",
 			points: [
 				"Two complete systems, from CRUD to management reporting.",
 			],
 		},
 		{
-			role: "Infrastructure and Applications Analyst",
+			role: "Infrastructure Analyst",
 			org: "Tata Consultancy Services",
-			period: "May 2019 · Mar 2021",
+			period: "2019 – 2021",
+			phase: "infra",
+			line: "International operations, in English, through a change of consultancy.",
 			summary:
 				"Environment stability and advanced troubleshooting for international operations, including network configuration and estate maintenance.",
 			points: [
@@ -116,9 +133,11 @@ export const jobs: Record<Lang, Job[]> = {
 			],
 		},
 		{
-			role: "Infrastructure and Applications Analyst",
+			role: "Infrastructure Analyst",
 			org: "Atos",
-			period: "Feb 2018 · May 2019",
+			period: "2018 – 2019",
+			phase: "infra",
+			line: "Incidents across systems, network and hardware in corporate environments.",
 			summary:
 				"Diagnosis and resolution of incidents across systems, network, hardware and software, in national and international corporate environments.",
 			points: [

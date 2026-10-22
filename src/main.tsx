@@ -2,8 +2,7 @@ import { StrictMode } from "react";
 import { hydrateRoot } from "react-dom/client";
 import App from "./App";
 import { langFromPath } from "./lib/settings";
-import "@fontsource-variable/plus-jakarta-sans";
-import "@fontsource-variable/inter";
+import "@fontsource-variable/schibsted-grotesk";
 import "./styles/app.css";
 
 // O HTML já vem renderizado do build, então hidratamos em vez de montar do zero.

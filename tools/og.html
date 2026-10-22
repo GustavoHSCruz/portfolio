@@ -1,0 +1,42 @@
+<!doctype html>
+<!--
+  Fonte do card de prévia social (public/og.png), 1200x630.
+  Para refazer: renderizar este arquivo a 1200x630 num Chromium headless, de dentro
+  de tools/, com a foto do GitHub salva como tools/avatar.jpg (não versionada):
+    curl -L -o tools/avatar.jpg "https://avatars.githubusercontent.com/u/66931989?v=4&s=320"
+    brave --headless=new --hide-scrollbars --window-size=1200,630 \
+      --screenshot=public/og.png file://$PWD/tools/og.html
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+	@font-face {
+		font-family: "Schibsted Grotesk Variable";
+		src: url("../node_modules/@fontsource-variable/schibsted-grotesk/files/schibsted-grotesk-latin-wght-normal.woff2") format("woff2");
+		font-weight: 400 900;
+	}
+	* { box-sizing: border-box; margin: 0; }
+	body {
+		width: 1200px; height: 630px; padding: 96px 104px;
+		background: #0b0b0c; color: #ececee;
+		font-family: "Schibsted Grotesk Variable", sans-serif;
+		display: flex; flex-direction: column; justify-content: space-between;
+	}
+	.who { display: flex; align-items: center; gap: 28px; }
+	.who img { width: 112px; height: 112px; border-radius: 50%; box-shadow: 0 0 0 2px #222226; }
+	.who b { display: block; font-size: 52px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; }
+	.who span { font-size: 28px; color: #8e8e96; }
+	h1 { font-size: 64px; font-weight: 600; letter-spacing: -0.025em; line-height: 1.1; max-width: 22ch; text-wrap: balance; }
+	.url { display: flex; justify-content: space-between; font-size: 26px; color: #8e8e96; border-top: 2px solid #222226; padding-top: 24px; }
+</style>
+</head>
+<body>
+	<div class="who">
+		<img src="avatar.jpg" alt="">
+		<div><b>Gustavo Cruz</b><span>Senior Software Engineer at DXC Technology</span></div>
+	</div>
+	<h1>Hi, I'm Gustavo.</h1>
+	<div class="url"><span>gcruz.geg.dev.br</span><span>Londrina, Brazil</span></div>
+</body>
+</html>

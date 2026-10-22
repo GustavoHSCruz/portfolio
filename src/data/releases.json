@@ -1,0 +1,32 @@
+{
+	"projects": {
+		"steamprofiler": {
+			"commit": "5dce463",
+			"url": "https://github.com/GustavoHSCruz/SteamProfiler.Front/commit/5dce463ec8619302668247525441faf7a67f9278"
+		},
+		"vpngo": {
+			"version": "v0.6.0",
+			"date": "2026-10-22",
+			"url": "https://github.com/GustavoHSCruz/VPNGo/releases/tag/v0.6.0"
+		},
+		"vpngo-gui": {
+			"version": "v0.2.0",
+			"date": "2026-10-22",
+			"url": "https://github.com/GustavoHSCruz/VPNGo-gui/releases/tag/v0.2.0"
+		}
+	},
+	"contributions": {
+		"rehan-remade/universal-modder": {
+			"merged": 2,
+			"open": 0
+		},
+		"ran-j/PS2Recomp": {
+			"merged": 0,
+			"open": 3
+		},
+		"guilhermeSDB/Orbe": {
+			"merged": 1,
+			"open": 0
+		}
+	}
+}

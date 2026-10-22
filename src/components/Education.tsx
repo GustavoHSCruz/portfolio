@@ -6,14 +6,14 @@ export function Education() {
 	const { lang, s } = useSettings();
 
 	return (
-		<section className="col section" id="formacao">
-			<SectionHead n="03" title={s.educationTitle} lead={s.educationLead} />
-			<ul className="degrees reveal">
+		<section className="sec">
+			<SectionHead id="education" title={s.educationTitle} />
+			<ul className="rows">
 				{education[lang].map((d) => (
-					<li key={d.degree}>
-						<span>{d.degree}</span>
-						<span className="org">
-							{d.org}, {d.done}
+					<li className="item" key={d.degree}>
+						<span className="name">{d.degree}</span>
+						<span>
+							{d.org} · {d.done}
 						</span>
 					</li>
 				))}

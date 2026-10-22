@@ -1,42 +1,47 @@
 import { jobs } from "../data/content";
+import type { Job } from "../data/types";
 import { useSettings } from "../lib/settings";
 import { SectionHead } from "./SectionHead";
 
+/** O primeiro e o último ano da fase, a partir dos períodos "2021 – 2023". */
+function span(list: Job[]) {
+	const first = list[list.length - 1].period.split(" – ")[0];
+	const last = list[0].period.split(" – ")[1];
+	return `${first} – ${last}`;
+}
+
 export function Experience() {
 	const { lang, s } = useSettings();
-	const list = jobs[lang];
+	const phases = [
+		{ key: "software", title: s.phaseSoftware },
+		{ key: "infra", title: s.phaseInfra },
+	] as const;
 
 	return (
-		<section className="col section" id="experiencia">
-			<SectionHead n="01" title={s.experienceTitle} lead={s.experienceLead} />
-
-			<div className="timeline">
-				{list.map((job, i) => (
-					<article
-						className={`tl-item card reveal${i === 0 ? " is-current" : ""}`}
-						key={`${job.org}-${job.period}`}
-					>
-						<div className="card-top">
-							<h3 className="card-title">{job.role}</h3>
-							<span className="card-meta">{job.period}</span>
-						</div>
-						<p className="card-org">
-							{job.org}
-							{job.context ? `, ${job.context}` : ""}
-						</p>
-
-						<p className="card-body">{job.summary}</p>
-
-						{job.points.length > 0 && (
-							<ul className="points">
-								{job.points.map((p) => (
-									<li key={p}>{p}</li>
-								))}
-							</ul>
-						)}
-					</article>
-				))}
-			</div>
+		<section className="sec">
+			<SectionHead id="experience" title={s.experienceTitle} />
+			{phases.map(({ key, title }) => {
+				const list = jobs[lang].filter((j) => j.phase === key);
+				return (
+					<div className="phase" key={key}>
+						<h3 className="phase-head">
+							<span>{title}</span>
+							<span>{span(list)}</span>
+						</h3>
+						<ul className="jobs">
+							{list.map((j) => (
+								<li className="job" key={`${j.org}-${j.period}`}>
+									<span className="per">{j.period}</span>
+									<div>
+										<b>{j.role}</b> <span className="org">{s.at} {j.org}</span>
+										<p>{j.line}</p>
+									</div>
+								</li>
+							))}
+						</ul>
+					</div>
+				);
+			})}
 		</section>
 	);
 }
