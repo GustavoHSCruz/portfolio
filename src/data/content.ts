@@ -15,7 +15,7 @@ export const identity = {
 export const jobs: Record<Lang, Job[]> = {
 	pt: [
 		{
-			role: "Engenheiro de Software Pleno",
+			role: "Engenheiro de Software Sênior",
 			org: "DXC Technology",
 			context: "Operadora logística de grande porte",
 			period: "jan/2026 · atual",
@@ -72,7 +72,7 @@ export const jobs: Record<Lang, Job[]> = {
 	],
 	en: [
 		{
-			role: "Software Engineer",
+			role: "Senior Software Engineer",
 			org: "DXC Technology",
 			context: "Large logistics operator",
 			period: "Jan 2026 · present",

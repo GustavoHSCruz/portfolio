@@ -1,6 +1,6 @@
 # Gustavo Cruz
 
-> Gustavo Cruz is a Brazilian software engineer focused on backend systems in production, with eight years in technology and four years building with C# and .NET.
+> Gustavo Cruz is a Brazilian senior software engineer focused on backend systems in production, with nine years in technology and five years building with C# and .NET.
 
 He currently works at DXC Technology. His experience covers software engineering, infrastructure and application security. This portfolio is available in English and Brazilian Portuguese.
 

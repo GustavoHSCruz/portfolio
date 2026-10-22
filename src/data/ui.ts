@@ -10,16 +10,16 @@ export const ui: Record<Lang, Record<string, string>> = {
 		navContact: "Contato",
 		themeToggle: "Alternar tema",
 
-		role: "Engenheiro de Software",
+		role: "Engenheiro de Software Sênior",
 		location: "Brasil",
 		heroPre: "Engenheiro de software backend focado em ",
 		heroAccent: "sistemas em produção",
 		heroPost: ".",
 		heroBlurb:
-			"Quatro anos em C# e .NET, hoje na DXC Technology. Meu trabalho fica onde arquitetura, infraestrutura e segurança se encontram, nos problemas que só aparecem com o sistema sob carga real.",
+			"Cinco anos em C# e .NET, hoje na DXC Technology. Meu trabalho fica onde arquitetura, infraestrutura e segurança se encontram, nos problemas que só aparecem com o sistema sob carga real.",
 
 		experienceTitle: "Experiência",
-		experienceLead: "Oito anos em tecnologia, quatro deles em desenvolvimento backend.",
+		experienceLead: "Nove anos em tecnologia, cinco deles em desenvolvimento backend.",
 		projectsTitle: "Projetos",
 		projectsLead: "O que eu construí por fora do horário de trabalho.",
 		educationTitle: "Formação",
@@ -42,16 +42,16 @@ export const ui: Record<Lang, Record<string, string>> = {
 		navContact: "Contact",
 		themeToggle: "Toggle theme",
 
-		role: "Software Engineer",
+		role: "Senior Software Engineer",
 		location: "Brazil",
 		heroPre: "Backend software engineer focused on ",
 		heroAccent: "systems in production",
 		heroPost: ".",
 		heroBlurb:
-			"Four years in C# and .NET, currently at DXC Technology. My work sits where architecture, infrastructure and security meet, on the problems that only surface once a system is under real load.",
+			"Five years in C# and .NET, currently at DXC Technology. My work sits where architecture, infrastructure and security meet, on the problems that only surface once a system is under real load.",
 
 		experienceTitle: "Experience",
-		experienceLead: "Eight years in technology, four of them in backend development.",
+		experienceLead: "Nine years in technology, five of them in backend development.",
 		projectsTitle: "Projects",
 		projectsLead: "What I have built outside working hours.",
 		educationTitle: "Education",

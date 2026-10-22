@@ -4,17 +4,17 @@ export const SITE = "https://gcruz.geg.dev.br";
 
 export const seo: Record<Lang, { title: string; description: string; locale: string; htmlLang: string; path: string }> = {
 	en: {
-		title: "Gustavo Cruz | Backend Software Engineer",
+		title: "Gustavo Cruz | Senior Backend Software Engineer",
 		description:
-			"Backend software engineer specialised in C# and .NET. Eight years in technology, four of them building and running production systems, currently at DXC Technology.",
+			"Senior backend software engineer specialised in C# and .NET. Nine years in technology, five of them building and running production systems, currently at DXC Technology.",
 		locale: "en_US",
 		htmlLang: "en",
 		path: "/",
 	},
 	pt: {
-		title: "Gustavo Cruz | Engenheiro de Software Backend",
+		title: "Gustavo Cruz | Engenheiro de Software Backend Sênior",
 		description:
-			"Engenheiro de software backend especializado em C# e .NET. Oito anos em tecnologia, quatro deles construindo e sustentando sistemas em produção, hoje na DXC Technology.",
+			"Engenheiro de software backend sênior especializado em C# e .NET. Nove anos em tecnologia, cinco deles construindo e sustentando sistemas em produção, hoje na DXC Technology.",
 		locale: "pt_BR",
 		htmlLang: "pt-BR",
 		path: "/pt/",
@@ -35,7 +35,7 @@ export function personJsonLd(lang: Lang) {
 		alternateName: "Gustavo Cruz",
 		url: `${SITE}${seo[lang].path}`,
 		image: `${SITE}/og.png`,
-		jobTitle: isPt ? "Engenheiro de Software" : "Software Engineer",
+		jobTitle: isPt ? "Engenheiro de Software Sênior" : "Senior Software Engineer",
 		description: seo[lang].description,
 		email: "mailto:gustavo_cruz08@hotmail.com",
 		nationality: { "@type": "Country", name: "Brazil" },
