@@ -30,10 +30,5 @@ Thumbs.db
 
 # Public CVs (if you keep local copies you don't want committed)
 public/cv/
-# Impeccable: capturas e esboços de trabalho
-.impeccable/review/
-.impeccable/mocks/
-.impeccable/decision-payload*.json
-tools/avatar.jpg
-.impeccable/hook.cache.json
-.impeccable/questions/
+# Impeccable: arquivos da ferramenta (PRODUCT.md e DESIGN.md ficam versionados na raiz)
+.impeccable/
