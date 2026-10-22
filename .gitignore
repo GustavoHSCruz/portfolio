@@ -32,3 +32,4 @@ Thumbs.db
 public/cv/
 # Impeccable: arquivos da ferramenta (PRODUCT.md e DESIGN.md ficam versionados na raiz)
 .impeccable/
+tools/avatar.jpg
